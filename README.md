@@ -24,7 +24,7 @@ change `~/.m2/settings.xml`
      <repository>
         <id>github-spiderpool-mvn-repository</id>
         <name>github-spiderpool-mvn-repository</name>
-        <url>https://raw.githubusercontent.com/SpiderPool-New/mvn-repository/master/repository</url>
+        <url>https://raw.githubusercontent.com/SpiderPool-New/mvn-repository/main/repository</url>
         <snapshots>
             <enabled>true</enabled>
             <updatePolicy>always</updatePolicy>
@@ -38,7 +38,7 @@ change `~/.m2/settings.xml`
     <repository>
         <id>github-spiderpool-mvn-repository</id>
         <name>github-spiderpool-mvn-repository</name>
-        <url>https://raw.github.com/SpiderPool-New/mvn-repository/master/repository</url>
+        <url>https://raw.github.com/SpiderPool-New/mvn-repository/main/repository</url>
         <snapshots>
             <enabled>true</enabled>
             <updatePolicy>always</updatePolicy>
