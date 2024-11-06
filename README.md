@@ -3,8 +3,9 @@ Myself maven repository
 
 ## Usage
 ### add user and password
-change '~/.m2/settings.xml'
-'''
+change `~/.m2/settings.xml`
+
+```xml
 <settings>
   <servers>
     <server>
@@ -14,7 +15,8 @@ change '~/.m2/settings.xml'
     </server>
   </servers>
 </settings>
-'''
+```
+
 ### change pom.xml
 `pom.xml`:
 ```xml
@@ -58,3 +60,6 @@ mvn install:install-file -Dfile=./demo-xxx-1.x.x.jar -DgroupId=com.xxx.yyy -Dart
 ```shell
 git push to the Github
 ```
+
+## Docs
+https://anjia0532.github.io/2018/10/11/git-maven-howto/
