@@ -2,14 +2,31 @@
 Myself maven repository
 
 ## Usage
-
+### add user and password
+change '~/.m2/settings.xml'
+'''
+<settings>
+  <servers>
+    <server>
+      <id>github-spiderpool-mvn-repository</id>
+      <username>YOUR-USERNAME</username>
+      <password>YOUR-PASSWORD</password>
+    </server>
+  </servers>
+</settings>
+'''
+### change pom.xml
 `pom.xml`:
 ```xml
 <repositories>
      <repository>
-        <id>spiderpool-mvn-repository</id>
-        <name>spiderpool-mvn-repository</name>
+        <id>github-spiderpool-mvn-repository</id>
+        <name>github-spiderpool-mvn-repository</name>
         <url>https://raw.githubusercontent.com/SpiderPool-New/mvn-repository/master/repository</url>
+        <snapshots>
+            <enabled>true</enabled>
+            <updatePolicy>always</updatePolicy>
+        </snapshots>
     </repository>
 </repositories>
 ```
@@ -17,9 +34,13 @@ Myself maven repository
 ```xml
 <repositories>
     <repository>
-        <id>spiderpool-mvn-repository</id>
-        <name>spiderpool-mvn-repository</name>
+        <id>github-spiderpool-mvn-repository</id>
+        <name>github-spiderpool-mvn-repository</name>
         <url>https://raw.github.com/SpiderPool-New/mvn-repository/master/repository</url>
+        <snapshots>
+            <enabled>true</enabled>
+            <updatePolicy>always</updatePolicy>
+        </snapshots>
     </repository>
 </repositories>
 ```
